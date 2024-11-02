@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    background-image: url(fondo-comida.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+/* Navegación */
+nav {
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin-right: 60px; /* Espaciado en pantallas grandes */
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: aliceblue;
+}
+
+nav a:hover {
+    color: rgb(245, 173, 17);
+}
+
+/* Icono SVG en la navegación */
+nav a.svg-link {
+    display: inline-block;
+    margin-left: -300px; /* Margen ajustado */
+    margin-right: 450px; /* Espacio para el SVG */
+}
+
+svg {
+    width: 40px;
+    color: white;
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    margin-top: 150px; /* Margen superior en pantallas grandes */
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(253, 254, 255);
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    nav a {
+        margin-right: 20px; /* Reduce el espaciado para pantallas pequeñas */
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+    }
+
+    nav a.svg-link {
+        margin-left: -20px; /* Ajusta el margen izquierdo */
+        margin-right: 10px; /* Menos margen derecho */
+    }
+
+    svg {
+        width: 30px; /* Reduce el tamaño del SVG en dispositivos móviles */
+    }
+
+    h1 {
+        margin-top: 100px; /* Ajusta el margen superior para móviles */
+        font-size: 1.8rem; /* Tamaño de fuente ajustado para pantallas pequeñas */
+    }
+}
+
