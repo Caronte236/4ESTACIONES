@@ -1,17 +1,30 @@
 /* Estilos generales */
-body {
-    background-image: url(fondo-comida.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+body,.separator{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: rgb(227, 236, 220);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body > :not(nav){
+margin-left: 50px;
+margin-right: 30px;
+}
+
+
+.separator,hr{
+    border: 0;
+    border-top: 2px solid rgba(128, 128, 128, 0.459);
 }
 
 /* Navegación */
 nav {
     background-color: transparent;
-    padding: 10px 20px;
+  
     text-align: center;
 }
 
@@ -19,7 +32,7 @@ nav a {
     margin-right: 60px; /* Espaciado en pantallas grandes */
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    color: aliceblue;
+    color: rgb(13, 13, 14);
 }
 
 nav a:hover {
@@ -35,7 +48,7 @@ nav a.svg-link {
 
 svg {
     width: 40px;
-    color: white;
+    color: rgb(15, 15, 15);
 }
 
 /* Encabezado */
@@ -43,11 +56,14 @@ h1 {
     text-align: center;
     margin-top: 150px; /* Margen superior en pantallas grandes */
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(253, 254, 255);
+    color: rgb(55, 55, 56);
 }
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
+    body {
+        background-image: url('tu-imagen-movil.jpg');
+    }
     nav {
         padding: 10px; /* Ajusta el padding */
     }
