@@ -6,6 +6,7 @@ a{
 a:hover{
     color: green;
 }
+
 body,.separator{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -18,7 +19,6 @@ body,.separator{
 }
 nav {
     background-color: transparent;
-  
     text-align: center;
 }
 
